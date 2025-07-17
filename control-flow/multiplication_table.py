@@ -1,9 +1,9 @@
 # multiplication_table.py
-# Print a multiplication table for numbers 1 to 10.
+# Print a multiplication table for a user-defined number between 1 and 10.
 # format: "X * Y = Z", where X is the user's input number, Y is the current number in the loop, and Z is the product.
 def multiplication_table():
     try:
-        number = int(input("Enter a number to generate its multiplication table (1-10): "))
+        number = int(input("Enter a number to see its multiplication table: "))
         if number < 1 or number > 10:
             print("Please enter a number between 1 and 10.")
             return
