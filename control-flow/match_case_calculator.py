@@ -16,9 +16,7 @@ def calculator():
             result = num1 * num2
             print(f"The result of {num1} * {num2} is {result}.")
         case "divide":
-            if num2 == 0:
-                print("Error: Cannot divide by zero.")
-                print(f"The result of {num1} / {num2} is {result}.")
-            print(f"The result of {10} / {0} is (undefined).")
-        case _:
-            print("Invalid operation: Cannot devide by zero, choose the operation (+, -, *).")
+            if num2 != 0:
+                result = num1 / num2
+                print(f"The result is {result}. ")
+                
