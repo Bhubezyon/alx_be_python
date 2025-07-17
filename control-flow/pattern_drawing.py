@@ -1,7 +1,7 @@
 # pattern_drawing.py
 # Prompt the user for the size of the pattern and draw a square pattern of that size.
 def draw_square_pattern():
-    size = int(input("Enter the size of the square pattern: "))
+    size = int(input("Enter the size of the pattern: "))
 
     if size < 0:
         row = 0
