@@ -1,10 +1,10 @@
 # daily_reminder.py
 # Ask the user to input a daily reminder and print it.
 # 1. Prompt the user for a reminder.
-task = input("Please enter your daily task reminder: ")
+task = input("Enter your task: ")
 # 2. Print the reminder.
-priority = input("Please enter the priority of this task (high, medium, low): ").strip().lower()
-time_bound = input("Is this task time-bound? (yes/no): ").strip().lower()
+priority = input("Priority (high/medium/low): ")
+time_bound = input("Is it time-bound? (yes/no): ").strip()
 # 3. Provide feedback based on the priority and time-bound status.
 match priority:
     case "high":
