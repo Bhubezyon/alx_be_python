@@ -3,9 +3,9 @@
 #What's the weather like today? (sunny, rainy, cold)
 # Based on the input, provide advice on what to wear.
 def get_weather_advice():
-    weather = input("What is the weather like today? (sunny/rainy/cold): ")
+    weather = input("What's the weather like today? (sunny/rainy/cold): ")
     if weather == "sunny":
-        print("Wear a t-shirt and sunglasses.")
+        print("Wear a t-shirt and sunglasses. ")
     elif weather == "rainy":
         print("Don't forget your umbrella and raincoat.")
     elif weather == "cold":
