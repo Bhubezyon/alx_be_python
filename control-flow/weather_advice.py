@@ -10,5 +10,5 @@ def get_weather_advice():
         print( "Don't forget your umbrella and a raincoat." )
     elif weather == 'cold':
         print( "Make sure to wear a warm coat and a scarf." )
-    elif weather == 'windy':
-        print( "Sorry, I don't have recommendations for this weather." )
+    else : 
+        print ( "Sorry, I don't have recommendations for this weather." )
