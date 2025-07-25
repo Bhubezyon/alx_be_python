@@ -9,9 +9,15 @@ def display_menu():
 
         while True:
             display_menu()
-            choice = input("Enter item to add: ")
+            choice = input("Enter your choice: ")
             if choice ==  "1":
                 # Prompt for and add an item
+                item = input("Enter the item to add: ").strip()
+                if item:
+                    shopping_list.append(item)
+                    print(f"Added '{item}' to the shopping list.")
+                else:
+                    print("Item cannot be empty.")
                 pass
             elif choice == "2":
                 # Prompt for and remove an item
