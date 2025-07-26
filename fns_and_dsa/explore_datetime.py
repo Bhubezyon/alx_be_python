@@ -1,4 +1,4 @@
-def calculate_future_datetime():
+def display_current_datetime():
     from datetime import datetime, timedelta
 
     # Get the current date and time
@@ -9,5 +9,5 @@ def calculate_future_datetime():
     days_to_add = int(input("Enter the number of days to add: "))
     
     # Calculate the future date
-    future_datetime = current_datetime + timedelta(days=days_to_add)
+    future_datetime = current_datetime + timedelta(days=number_of_days)
     print(f"Future date and time after adding {days_to_add} days: {future_datetime}")
