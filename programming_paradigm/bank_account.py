@@ -22,5 +22,7 @@ class BankAccount:
     def get_balance(self):
         return self.balance
 
-    def __str__(self):
-        return f"Account Number: {self.account_number}, Account Holder: {self.account_owner}, Balance: ${self.balance:.2f}"
+    def display_balance(self):
+        print(f"Current balance: ${self.account_balance:.2f}")
+
+
