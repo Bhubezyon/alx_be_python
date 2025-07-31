@@ -3,8 +3,9 @@ from bank_account import BankAccount
 
 def __init__(self, account_owner, initial_balance=0):
     self.account_owner = account_owner
+    self.account_number = "123456789"  # Example account number
     self.balance = initial_balance
-    account = BankAccount(250)
+    account = BankAccount("Calvin",250)
     # Example starting balance
     if len(sys.argv) < 2:
         print("Usage: python main-0.py <command> : <amount>")
