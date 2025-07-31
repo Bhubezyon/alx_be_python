@@ -2,7 +2,7 @@ import sys
 from bank_account import BankAccount
 
 def __init__(self, account_owner, initial_balance=0):
-    account = BankAccount("Calvin", 250)
+    account_owner = BankAccount("Calvin", 250)
     self.account_number = "123456789"  # Example account number
     self.balance = initial_balance
     # Example starting balance
@@ -24,10 +24,9 @@ def __init__(self, account_owner, initial_balance=0):
             else:
                 print("Insufficient funds. ")
         elif command == "display":
-
-            account.display_balance()
+         account.display_balance()
     else:
             print("Invalid command. ")
-
             if __name__ == "__main__":
-                main()
+                account = BankAccount("Calvin", 250)
+                account.display_balance()
