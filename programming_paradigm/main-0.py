@@ -1,7 +1,7 @@
 import sys
 from bank_account import BankAccount
 
-def __init__(self, account_owner, initial_balance=0):
+def __init__(self, account_owner, initial_balance=250):
     account_owner = BankAccount("Calvin", 250)
     self.account_number = "123456789"  # Example account number
     self.balance = initial_balance
