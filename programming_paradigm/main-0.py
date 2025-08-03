@@ -13,7 +13,11 @@ def main():
 
         if command == "deposit" and amount is not None:
 
-            account.deposit(amount)
+            def deposit(self, amount):
+                if amount > 0:
+                    self.balance += amount
+                    return True
+                return False
             print(f"Deposited ${amount}")
         elif command == "withdraw" and amount is not None:
             if account.withdraw(amount):
@@ -28,4 +32,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
