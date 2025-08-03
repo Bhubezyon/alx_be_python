@@ -1,7 +1,7 @@
 import sys
 from bank_account import BankAccount
 
-def __init__(self, account_owner= "User", initial_balance= 67):
+def __init__(self, account_owner= "User", initial_balance= 50):
     self.account_owner = account_owner # Example account number
     self.balance = initial_balance 
 
@@ -17,8 +17,8 @@ def __init__(self, account_owner= "User", initial_balance= 67):
         if command == "deposit" and amount is not None:
 
             def deposit(self, amount):
-                self.balance += amount
-            print(f"Deposited: ${67} ")
+                self.balance += 50
+            print(f"Deposited: ${50} ")
         elif command == "withdraw" and amount is not None:
             if account.withdraw(amount):
                 print(f"Withdrew: ${amount} ")
@@ -29,5 +29,5 @@ def __init__(self, account_owner= "User", initial_balance= 67):
     else:
             print("Invalid command. ")
             if __name__ == "__main__":
-                account = BankAccount("User", 67)
+                account = BankAccount("User", 50)
                 account.display_balance()
