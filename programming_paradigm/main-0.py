@@ -1,11 +1,8 @@
 import sys
 from bank_account import BankAccount
 
-def __init__(self, account_owner= "User", initial_balance= 50):
-    self.account_owner = account_owner # Example account number
-    self.balance = initial_balance 
-
-    # Example starting balance
+def main():
+    account = BankAccount(100)  # Example starting balance
     if len(sys.argv) < 2:
         print("Usage: python main-0.py <command> : <amount>")
         print("Commands: deposit, withdraw, display")
@@ -16,18 +13,19 @@ def __init__(self, account_owner= "User", initial_balance= 50):
 
         if command == "deposit" and amount is not None:
 
-            def deposit(self, amount):
-                self.balance += 50
-            print(f"Deposited: ${50} ")
+            account.deposit(amount)
+            print(f"Deposited ${amount}")
         elif command == "withdraw" and amount is not None:
             if account.withdraw(amount):
-                print(f"Withdrew: ${amount} ")
+                print(f"Withdrew ${amount}")
             else:
-                print("Insufficient funds. ")
+                print("Insufficient funds.")
         elif command == "display":
-         account.display_balance()
-    else:
-            print("Invalid command. ")
-            if __name__ == "__main__":
-                account = BankAccount("User", 50)
-                account.display_balance()
+
+            account.display_balance()
+        else:
+            print("Invalid command.")
+
+if __name__ == "__main__":
+    main()
+    
