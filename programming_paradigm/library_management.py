@@ -8,10 +8,10 @@ class Book:
         self._is_checked_out = False
 
     def return_book(self):
-        self._is_checked_out = False
+        self._is_checked_out = True
 
     def is_available(self):
-        return not self._is_checked_out
+        return self._is_checked_out
     
 class Library:
     def __init__(self):
