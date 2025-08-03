@@ -4,7 +4,7 @@ class BankAccount:
         self.account_number = account_number
         self.account_holder = account_owner
         self.balance = balance
-        account = BankAccount("account_owner", 250)  # Example account owner and initial balance
+        account = BankAccount("Calvin", 250)  # Example account owner and initial balance
 
     def deposit(self, amount):
             self.balance += amount
