@@ -18,10 +18,10 @@ def __init__(self, account_owner= "User", initial_balance= 67):
 
             def deposit(self, amount):
                 self.balance += amount
-            print(f"Deposited: ${amount} ")
+            print(f"Deposited: ${67} ")
         elif command == "withdraw" and amount is not None:
             if account.withdraw(amount):
-                print(f"Withdrew: ${amount}")
+                print(f"Withdrew: ${amount} ")
             else:
                 print("Insufficient funds. ")
         elif command == "display":
@@ -29,5 +29,5 @@ def __init__(self, account_owner= "User", initial_balance= 67):
     else:
             print("Invalid command. ")
             if __name__ == "__main__":
-                account = BankAccount("Calvin", 250)
+                account = BankAccount("User", 67)
                 account.display_balance()
