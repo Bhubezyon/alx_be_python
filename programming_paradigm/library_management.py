@@ -16,27 +16,27 @@ class Book:
     
 class Library:
     def __init__(self):
-        self.books = []
+        self._books = []
 
     def add_book(self, book):
         self.books.append(book)
 
     def checkout_book(self, title):
-        for book in self.books:
+        for book in self._books:
             if book.title == title and book._is_available():
                 book.check_out()
                 return book
             print(f"Book '{title}' is not available.")
 
     def return_book(self, title):
-        for book in self.books:
+        for book in self._books:
             if book.title == title and book._is_available():
                 book.return_book()
                 return book
         print(f"Book '{title}' was not checked out.")
 
     def list_available_books (self):
-        for book in self.books:
+        for book in self._books:
             if book.is_available():
                 print(book.is_available()) 
  
