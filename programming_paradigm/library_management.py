@@ -37,6 +37,5 @@ class Library:
     def list_available_books (self):
         for book in self.books:
             if book.is_available():
-                print(book.is_available())       # This will print true
-                print(f"Title: {book.title}, Author: {book.author}")
+                print(book.is_available()) 
  
