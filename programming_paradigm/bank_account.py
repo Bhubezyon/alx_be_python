@@ -4,13 +4,12 @@ class BankAccount:
         self.account_number = account_number
         self.account_holder = account_owner
         self.balance = balance
-        account = BankAccount("User", 250)  # Example account owner and initial balance
+        account = BankAccount("account_owner", 250)  # Example account owner and initial balance
 
     def deposit(self, amount):
-        if amount > 0:
             self.balance += amount
+            print(f"Deposited ${amount}")
             return True
-        return False
 
     def withdraw(self, amount):
         if 0 < amount <= self.balance:
