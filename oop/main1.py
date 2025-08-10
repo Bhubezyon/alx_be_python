@@ -9,16 +9,16 @@ def main():
     digital_novel = EBook("Snow Crash", "Neal Stepheson", 500)
     paper_novel = PrintBook("The  Catcher in the Rye", "J.D. Salinger", 234)
 
-    # Add books to the library"
+    # Add books to library"
 
-    my_library.add_book(classic_book)
+    library.add_book(classic_book)
 
-    my_library.add_book(classic_book)
+    library.add_book(classic_book)
 
-    my_libbrary.add_book(paper_novel)
+    library.add_book(paper_novel)
 
     # List all books in the library
-    my_library.list_books()
+    library.list_books()
 
 if __name__ == "__main__":
     main
