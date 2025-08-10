@@ -1,7 +1,6 @@
 from library_system import Book, EBook, PrintBook, Library
 
 def main():
-    # Create a library instance
     library = Library()
     
     # Create instances of each type of book
