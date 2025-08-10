@@ -1,12 +1,11 @@
 # polymorphism_demo.py import math
 
 import math
-from turtle import shape
 class Shape:
     def area(self):
         raise NotImplementedError("Subclasses must implement this method")
     
-    class Rectangle(shape):
+    class Rectangle(Shape):
         def __init__(self, length, width):
             self.length = length
             self.width = width
@@ -14,7 +13,7 @@ class Shape:
         def area(self):
             return self.length * self.width
         
-    class Circle(shape):
+    class Circle(Shape):
         def __init__(self, radius):
             self.radius = radius
 
