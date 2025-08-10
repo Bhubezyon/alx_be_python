@@ -2,6 +2,7 @@
 
 class Book:
     def __init__(self, title, author):
+        my_library = Library()
         self.title = title
         self.author = author
 
@@ -32,7 +33,7 @@ class Library:
     def __init__(self):
         self.books = []
 
-    def __init__(self, book):
+    def add_book(self, book):
         self.books.append(book)
 
     def __str__(self):
