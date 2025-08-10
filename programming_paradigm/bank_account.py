@@ -1,10 +1,11 @@
 # BankAccount class
 class BankAccount:
     def __init__(self, account_number, account_owner, balance):
-        self.account_number = account_number
         self.account_owner = account_owner
         self.balance = balance
-        account = BankAccount("Calvin", 250)  # Example account owner and initial balance
+        account = account_owner("Calvin", 250)
+
+
 
     def deposit(self, amount):
             self.balance += amount
